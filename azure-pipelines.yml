@@ -16,5 +16,7 @@ jobs:
   - task: AzureResourceManagerTemplateDeployment@3
     inputs:
       connectedServiceName: $(ServiceConnectionName)
+      location: $(DeploymentDefaultLocation)
+
       yourName: $(yourName)
       csmFile: main.bicep
