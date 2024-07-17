@@ -8,6 +8,7 @@ variables:
   EnvironmentType: 'Test'
   ResourceGroupName: 'RG_GMJ3'
   DeploymentDefaultLocation: 'westus3'
+  yourName1: 'gmj'
 
 jobs:
 - job:
@@ -16,7 +17,6 @@ jobs:
     inputs:
       connectedServiceName: $(ServiceConnectionName)
       location: $(DeploymentDefaultLocation)
-      resourceGroupName: $(ResourceGroupName)
+
+      yourName: $(yourName1)
       csmFile: main.bicep
-      overrideParameters: >
-        -environmentType $(EnvironmentType)
