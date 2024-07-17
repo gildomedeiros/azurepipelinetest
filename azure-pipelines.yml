@@ -6,7 +6,7 @@ pool:
 variables:
   ServiceConnectionName: 'serviceconnnection_gmj1'
   EnvironmentType: 'Test'
-  ResourceGroupName: 'MyResourceGroup123'
+  ResourceGroupName: 'RG_GMJ3'
   DeploymentDefaultLocation: 'westus3'
 
 jobs:
