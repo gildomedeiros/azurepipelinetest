@@ -17,6 +17,5 @@ jobs:
     inputs:
       connectedServiceName: $(ServiceConnectionName)
       location: $(DeploymentDefaultLocation)
-
-      yourName: $(yourName1)
-      csmFile: main.bicep
+      ResourceGroupName: 'rg11'
+      csmFile: main2.bicep
