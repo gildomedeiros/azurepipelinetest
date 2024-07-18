@@ -2,14 +2,12 @@
 targetScope='subscription'
 
 @description('Azure resource deployment location.')
-param resourceGroupLocation string
+param location string = resourceGroup().location
 param resourceGroupName string
 
 resource newRG 'Microsoft.Resources/resourceGroups@2024-03-01' = {
   name: resourceGroupName
-  location: resourceGroupLocation
+  location: location
 }
 
-
-output helloWorld string = '${hello} ${yourName}'
 
